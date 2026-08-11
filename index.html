@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="David Stoyka's portfolio of AI-assisted business systems, automation workflows, and connected data solutions.">
+  <title>David Stoyka | AI Solutions Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="David Stoyka, home">David Stoyka</a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Selected work</a>
+        <a href="#impact">Impact</a>
+        <a href="#approach">Approach</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">David Stoyka — AI Solutions &amp; Automation</p>
+          <h1>Turning Real Business Problems Into Working AI-Powered Solutions</h1>
+          <p class="hero-lede">I combine decades of business, sales, digital publishing, and technology experience with hands-on AI-assisted development to solve real operational problems. At CarCollectorsClub.com, I designed and built connected applications, automation workflows, data pipelines, API integrations, AI research systems, and publishing tools that are used in day-to-day operations.</p>
+          <p class="hero-secondary">The projects below show how I identify a business problem, design the solution, connect the necessary systems, use AI where it adds value, and turn the result into a working production process.</p>
+          <ul class="capability-band" aria-label="Core capabilities">
+            <li>AI</li>
+            <li>Automation</li>
+            <li>APIs</li>
+            <li>Webhooks</li>
+            <li>Data Synchronization</li>
+            <li>Workflow Orchestration</li>
+            <li>Business Process Design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section overview">
+      <div class="container">
+        <div class="split-copy">
+          <article class="challenge-panel">
+            <p class="eyebrow">The Business Challenge</p>
+            <h2>CarCollectorsClub.com Had Outgrown Manual Publishing</h2>
+            <p>Managing hundreds of collector-car events, auctions, venues, organizers, articles, dates, images, and social posts required information to move across several systems. Researching new dates, validating records, updating WordPress, maintaining Google Sheets, publishing content, and keeping event data synchronized created repetitive work and opportunities for errors.</p>
+            <p class="problem-callout">The challenge was not simply creating content. It was keeping research, data, publishing, and multiple connected systems accurate and synchronized.</p>
+          </article>
+          <article class="solution-panel">
+            <p class="eyebrow">The Solution</p>
+            <h2>Build One Connected Operating System Around the Work</h2>
+            <p>Instead of continuing to solve each task manually, I designed a connected operating system around the publishing process. A custom dashboard became the control center. Behind it, Node.js services, n8n workflows, AI agents, custom scrapers, Google Sheets, webhooks, REST APIs, WordPress, The Events Calendar, and MySQL-backed site data work together to research, validate, enrich, publish, update, and synchronize event information.</p>
+            <p class="solution-closing">The result is a practical production system that reduces repetitive work, improves data consistency, speeds publishing, and gives the business a more scalable way to manage its event and auction operations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-heading dashboard-heading">
+          <div>
+            <p class="eyebrow">01 · CCC Publisher Dashboard</p>
+            <h2>A Custom Control Center for Event, Auction &amp; Publishing Operations</h2>
+          </div>
+          <div class="dashboard-intro">
+            <p>CarCollectorsClub.com manages hundreds of collector-car events, auctions, venues, organizers, articles, dates, images, and publishing tasks. I designed the CCC Publisher Dashboard to bring those operations into one visual control center instead of managing them across disconnected tools and manual processes.</p>
+            <p>The dashboard gives the operator a live view of event data, publishing status, venue and organizer information, WordPress IDs, dates, social-post status, and workflow results. From the same interface, the user can launch AI-assisted and automated workflows that research, validate, update, publish, synchronize, and distribute event information.</p>
+          </div>
+        </div>
+        <figure class="media-frame media-primary dashboard-primary" data-lightbox-ready>
+          <img src="images/Dashboard-Live-01.png" alt="Live CCC publisher dashboard showing car show content controls" width="1267" height="898">
+          <figcaption>CCC Publisher Dashboard — live operational view of event, auction, venue, publishing, and workflow data.</figcaption>
+        </figure>
+
+        <div class="dashboard-features">
+          <article class="dashboard-feature workflow-controls" data-reveal-ready>
+            <figure class="media-frame feature-image" data-lightbox-ready>
+              <img src="images/Discover-Buttons-01.jpg" alt="CCC dashboard action buttons with workflow status feedback" width="687" height="342">
+              <figcaption>Workflow controls and operator feedback</figcaption>
+            </figure>
+            <div class="feature-copy">
+              <p class="feature-number" aria-hidden="true">01</p>
+              <h3>One Interface, Multiple Automated Actions</h3>
+              <p>Each dashboard action launches a specific automated workflow, allowing the operator to research dates, update and publish content, validate venues and organizers, synchronize WordPress data, distribute social content, refresh data, or run the auction discovery system from one interface.</p>
+           
+            </div>
+          </article>
+
+          <article class="dashboard-feature event-creation" data-reveal-ready>
+            <figure class="media-frame feature-image" data-lightbox-ready>
+              <img src="images/Dashboard-Add%20Event-02.jpg" alt="Add New Event interface with structured event fields" width="544" height="585">
+              <figcaption>Structured inputs for a new event workflow</figcaption>
+            </figure>
+            <div class="feature-copy">
+              <p class="feature-number" aria-hidden="true">02</p>
+              <h3>Structured Event Creation</h3>
+              <p>The Add New Event interface captures the core information required to start a new workflow, giving downstream automation and AI agents structured data for research, matching, enrichment, and publishing.</p>
+            </div>
+          </article>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="section dark-section content-update-section">
+      <div class="container">
+        <div class="architecture-intro" data-reveal-ready>
+          <p class="eyebrow">02 · Behind the Dashboard</p>
+          <h2>From One Button Click to a Fully Synchronized Content Update</h2>
+          <div class="architecture-copy">
+            <p>The dashboard is only the control surface. Behind each action is a connected workflow that moves data across the systems required to complete the job.</p>
+            <p>When the operator selects an existing car show and clicks Update Content &amp; Publish, the dashboard sends the request into the backend automation layer. The workflow retrieves the current event and article data, uses AI where needed to improve and format the content, prepares the updated publishing payload, synchronizes the changes with WordPress and Google Sheets, and returns the result to the dashboard.</p>
+            <p>The entire process is designed to keep the event record, article content, WordPress data, IDs, metadata, images, and operating data synchronized without requiring the user to manually move between systems.</p>
+          </div>
+        </div>
+        <figure class="diagram-frame architecture-diagram" data-lightbox-ready data-tooltip-ready data-reveal-ready>
+          <img src="images/CCC-Dashboard0-Ai-Assisted-Car-Show-Content-Update-Workflow-01.jpg" alt="Architecture diagram of the AI-assisted car show content update workflow" width="1200" height="675">
+          <figcaption>High-level system integration map showing how a dashboard action moves through the application, automation, AI, API, publishing, synchronization, and response layers.</figcaption>
+        </figure>
+
+        <ol class="process-band" aria-label="Content update process summary" data-reveal-ready>
+          <li>Dashboard Action</li>
+          <li>Backend Request</li>
+          <li>n8n Automation</li>
+          <li>WordPress Lookup</li>
+          <li>AI Content Processing</li>
+          <li>Data Cleaning &amp; Payload Build</li>
+          <li>WordPress Update</li>
+          <li>Google Sheets Synchronization</li>
+          <li>Dashboard Response</li>
+        </ol>
+
+        <div class="production-workflow" data-reveal-ready>
+          <div>
+            <p class="eyebrow">How the systems work together</p>
+            <h3>A Connected Production Workflow</h3>
+          </div>
+          <div class="production-copy">
+            <p>The workflow combines application logic, webhook-driven automation, AI-assisted content processing, REST/API requests, WordPress publishing, and source-of-truth data synchronization. Existing records are retrieved before updates are made, allowing the system to work with the current article, event, venue, organizer, metadata, and image information rather than rebuilding the record from scratch.</p>
+            <p>This approach keeps the user experience simple while allowing a much more sophisticated process to run behind the interface.</p>
+          </div>
+        </div>
+
+        <div class="architecture-capabilities" data-reveal-ready>
+          <article><h3>API-Driven Integration</h3><p>Uses HTTP GET, POST, and PUT requests to move and update information across connected systems.</p></article>
+          <article><h3>AI-Assisted Content Processing</h3><p>Uses AI to rewrite, format, and improve event content where needed.</p></article>
+          <article><h3>Synchronized Data</h3><p>Keeps Google Sheets and WordPress publishing data aligned as the workflow completes.</p></article>
+          <article><h3>Closed-Loop Feedback</h3><p>Returns workflow results back through the backend so the dashboard can show completion and refresh current data.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workflows">
+      <div class="container">
+        <div class="workflow-heading">
+          <p class="eyebrow">03 · Workflow Orchestration</p>
+          <h2>A Connected Automation System Built from Specialized Workflows</h2>
+          <div class="workflow-intro">
+            <p>The CCC automation environment is made up of specialized workflows that handle different parts of the publishing and data lifecycle. Each workflow is designed around a specific business task, but they share the same operating model: structured inputs, automated decision logic, AI-assisted processing where useful, API communication, data synchronization, and visible workflow results.</p>
+            <p>Together, these workflows turn what were once separate manual tasks into a connected operating system.</p>
+          </div>
+        </div>
+        <div class="workflow-layout">
+          <figure class="media-frame workflow-overview" data-lightbox-ready data-tooltip-ready data-reveal-ready><img src="images/N8N%20All%20Workjflows-05.jpg" alt="Overview of the complete n8n workflow library" width="1273" height="1507"><figcaption>Complete CCC automation environment showing the connected workflow architecture used for research, validation, publishing, synchronization, and distribution.</figcaption></figure>
+          <div class="workflow-list">
+            <article><span>01</span><div><h3>Discover &amp; Enrich</h3><p>Research event dates, gather source information, and normalize structured data.</p></div></article>
+            <article><span>02</span><div><h3>Validate &amp; Synchronize</h3><p>Match venues, organizers, IDs, and event records across connected systems.</p></div></article>
+            <article><span>03</span><div><h3>Update &amp; Create</h3><p>Maintain existing WordPress content and build new event and auction records.</p></div></article>
+            <article><span>04</span><div><h3>Distribute</h3><p>Prepare and publish approved content through automated social workflows.</p></div></article>
+            <article><span>05</span><div><h3>Auction Enrichment</h3><p>Match auction venues, enrich event records, and synchronize returned data.</p></div></article>
+          </div>
+        </div>
+
+        <div class="featured-workflows" aria-label="Featured CCC workflows">
+          <article class="featured-workflow" data-reveal-ready>
+            <figure class="featured-workflow-image" data-lightbox-ready data-tooltip-ready><img src="images/2-Date%20Discovery-Reseach-Enrichment-Date-Schout-01.png" alt="AI-assisted date discovery, research, and enrichment workflow" width="1377" height="375"></figure>
+            <div class="featured-workflow-copy"><p class="workflow-number">Featured workflow 01</p><h3>AI-Assisted Date Discovery &amp; Research</h3><p>Researches event dates and source information, uses AI-assisted discovery and validation, and writes structured results back into the operating data system.</p></div>
+          </article>
+
+          <article class="featured-workflow featured-workflow-reverse" data-reveal-ready>
+            <figure class="featured-workflow-image" data-lightbox-ready data-tooltip-ready><img src="images/3-Validate-Update-Create-Sync-Venue-Organizaiton-Date-01.png" alt="Venue and organizer validation, matching, and synchronization workflow" width="1482" height="221"></figure>
+            <div class="featured-workflow-copy"><p class="workflow-number">Featured workflow 02</p><h3>Venue &amp; Organizer Validation / Matching</h3><p>Searches existing records, evaluates venue and organizer information, resolves matches, prevents unnecessary duplicates, and synchronizes IDs and updates across connected systems.</p></div>
+          </article>
+
+          <article class="featured-workflow" data-reveal-ready>
+            <figure class="featured-workflow-image" data-lightbox-ready data-tooltip-ready><img src="images/6-AI-Assisted-Social-Media-Distribution-Workflow-01.png" alt="AI-assisted social media distribution workflow" width="1084" height="413"></figure>
+            <div class="featured-workflow-copy"><p class="workflow-number">Featured workflow 03</p><h3>AI-Assisted Social Media Distribution</h3><p>Adapts approved event content for multiple social platforms, prepares platform-specific data and hashtags, publishes through API-driven workflows, and logs distribution results.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section auction-section">
+      <div class="container">
+        <div class="auction-header">
+          <p class="eyebrow">04 · Automated discovery</p>
+          <h2>Automated Auction Discovery Built for Repeatable, Structured Intelligence</h2>
+          <div class="auction-intro">
+            <div>
+              <p class="auction-intro-label">The Problem</p>
+              <p>Collector-car auction schedules are spread across many websites with different layouts, date formats, naming conventions, and venue details. Manually reviewing those sites and preparing the information for publishing created a repetitive research process that was difficult to scale.</p>
+            </div>
+            <div>
+              <p class="auction-intro-label">The Solution</p>
+              <p>I designed a custom auction discovery system that runs site-specific scraper scripts, extracts upcoming auction data, normalizes the results into a consistent structure, and sends newly discovered records into the CCC data and publishing pipeline for validation, enrichment, synchronization, and publishing.</p>
+            </div>
+          </div>
+          <p class="auction-takeaway">The goal was not simply to scrape webpages — it was to turn changing public auction information into structured, reusable business data.</p>
+        </div>
+        <figure class="diagram-frame"><img src="images/CCC-Dashboard0-Auctomated-Auction-Discovery_Scraper-System-01.jpg" alt="Architecture diagram of the automated auction discovery scraper system" width="1200" height="675"><figcaption>End-to-end auction discovery architecture showing how a dashboard action triggers scraper execution, structured extraction, data staging, AI-assisted enrichment, WordPress/TEC publishing, synchronization, and response handling.</figcaption></figure>
+        <div class="proof-row">
+          <figure class="terminal-frame"><img src="images/scraper-mecum-runner-1.png" alt="Terminal showing a Mecum auction scraper returning structured data" width="1425" height="749"><figcaption>Mecum auction scraper running in VS Code — the Node.js runner visits the live auction schedule, extracts upcoming events, converts the results into structured fields, and checks the staging data before completing the run.</figcaption></figure>
+          <div><p class="eyebrow">Working proof</p><h3>From Live Auction Websites to Structured Event Data</h3><p>Each site-specific runner visits the target auction website, identifies upcoming auction records, extracts the relevant event details, and converts them into a consistent data structure.<br><br>The Mecum example shown here returns structured fields such as auction name, city, date range, organizer ID, normalized end date, source URL, and record key before checking whether the staging data is already current.<br><br>The structured output is then available to the connected Google Sheets and n8n workflow layer for downstream validation, enrichment, publishing, and synchronization.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section data-section">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">05 · Connected data</p><h2>Reliable information moving between the tools that need it.</h2></div>
+          <p><span class="placeholder-label">Placeholder copy</span> Structured source-of-truth data supports controlled synchronization across Google Sheets, WordPress and The Events Calendar, AI services, webhooks, and external APIs.</p>
+        </div>
+        <figure class="media-frame data-visual"><img src="images/Google-Sheet-CCC-Database-01.png" alt="Structured Google Sheets database used as a source of truth" width="1666" height="616"><figcaption>Structured source-of-truth database</figcaption></figure>
+        <ul class="capability-list" aria-label="Integration capabilities">
+          <li>REST APIs</li><li>Webhooks</li><li>WordPress / TEC</li><li>HTTP GET · POST · PUT</li><li>Data synchronization</li><li>Record matching</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section carpics-section">
+      <div class="container narrow center">
+        <p class="eyebrow">06 · Application development</p>
+        <h2>CarPics AI</h2>
+        <p class="large-copy"><span class="placeholder-label">Placeholder section</span> A dedicated case study for the CarPics AI application will be added here, covering the business need, product experience, AI capabilities, and implementation.</p>
+        <div class="coming-soon">Case study in development</div>
+      </div>
+    </section>
+
+    <section class="section impact-section" id="impact">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">07 · Business impact</p><h2>Technology measured by operational value.</h2></div>
+          <p><span class="placeholder-label">Placeholder copy</span> These systems are designed to reduce repetitive effort, improve data consistency, increase publishing capacity, and preserve human oversight where judgment matters.</p>
+        </div>
+        <div class="impact-grid">
+          <article><strong>Faster</strong><h3>Content operations</h3><p>Replace multi-step manual processes with guided automation.</p></article>
+          <article><strong>Stronger</strong><h3>Data quality</h3><p>Validate, match, and synchronize records across systems.</p></article>
+          <article><strong>Broader</strong><h3>Publishing capacity</h3><p>Scale research and content coverage without scaling complexity.</p></article>
+          <article><strong>Clearer</strong><h3>Human control</h3><p>Keep status, review, and decision points visible.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section closing" id="approach">
+      <div class="container closing-grid">
+        <div><p class="eyebrow">Professional approach</p><h2>Practical AI, grounded in the way the business actually works.</h2></div>
+        <div><p><span class="placeholder-label">Placeholder copy</span> I work from business process to production system—clarifying the operational need, selecting the right tools, connecting the data, and building for maintainability and trust.</p><p class="closing-note">Strategy · Process design · AI integration · Automation · Data systems · Delivery</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><p>David Stoyka · AI Solutions Portfolio</p><p>CarCollectorsClub.com case study</p></div>
+  </footer>
+</body>
+</html>
