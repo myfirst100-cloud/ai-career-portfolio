@@ -145,8 +145,8 @@ body.lightbox-open { overflow: hidden; }
 .architecture-capabilities article { padding: 27px 24px; border-right: 1px solid rgba(255,255,255,.12); }
 .architecture-capabilities article:first-child { padding-left: 0; }
 .architecture-capabilities article:last-child { padding-right: 0; border-right: 0; }
-.architecture-capabilities h3 { color: #8fcaf6; font-size: .91rem; }
-.architecture-capabilities p { margin: 0; color: rgba(255,255,255,.58); font-size: .82rem; line-height: 1.55; }
+.architecture-capabilities h3 { color: #8fcaf6; font-size: 1.1rem; }
+.architecture-capabilities p { margin: 0; color: rgba(255,255,255,.58); font-size: 1.0rem; line-height: 1.55; }
 
 .workflows { background: #fafbfc; }
 .workflow-heading { margin-bottom: 44px; }
@@ -157,12 +157,13 @@ body.lightbox-open { overflow: hidden; }
 .workflow-intro p:last-child { margin-bottom: 0; color: var(--ink); font-weight: 650; }
 .workflow-layout { display: grid; grid-template-columns: minmax(480px, 1.55fr) minmax(280px, .65fr); gap: 20px; align-items: start; }
 .workflow-overview img { object-fit: contain; object-position: top; }
-.workflow-list article { display: grid; grid-template-columns: 42px 1fr; gap: 5px; padding: 17px 0; border-bottom: 1px solid var(--line); }
+.workflow-list article { display: grid; grid-template-columns: 30px 1fr; gap: 5px; padding: 17px 0; border-bottom: 1px solid var(--line); }
 .workflow-list article:first-child { border-top: 1px solid var(--line); }
 .workflow-list article > span { color: var(--blue); font-size: .75rem; font-weight: 800; }
 .workflow-list p { margin: 0;
   font-size: 0.9rem;
-  color: var(--muted);}
+  color: var(--muted);
+  line-height: 1.3em}
 .workflow-integration { margin-top: 105px; padding-top: 62px; border-top: 2px solid var(--ink); }
 .workflow-integration-heading { max-width: 900px; margin-bottom: 34px; }
 .workflow-integration-heading h3 { margin-bottom: 0; font-size: clamp(2rem, 3.6vw, 3rem); letter-spacing: -.04em; }
@@ -238,6 +239,8 @@ body.lightbox-open { overflow: hidden; }
 .carpics-subtitle { margin: 0; color: var(--blue-dark); font-size: clamp(1.15rem, 2vw, 1.45rem); font-weight: 750; }
 .carpics-story { display: grid; grid-template-columns: 1fr 1fr; gap: 8vw; margin-bottom: 52px; padding-block: 34px; border-block: 1px solid var(--line); }
 .carpics-story article > p:last-child { margin-bottom: 0; color: var(--muted); }
+.map-section .carpics-story { margin-bottom: 0; }
+.map-technical-note { margin: 26px 0 52px; color: var(--muted); font-size: .9rem; }
 .carpics-visual { margin-bottom: 46px; box-shadow: var(--shadow); }
 .carpics-visual img { width: 100%; }
 .carpics-proof { padding-top: 34px; border-top: 2px solid var(--ink); }
@@ -436,4 +439,116 @@ h3.function  {
 h3.dashStats {
         margin-top: 98px;
         font-size: 43px;
+}
+
+
+        /****************DSS Custom Styles****************/
+/* Selectively frame the major light project sections */
+#work > .container,
+.workflows > .container,
+.data-section > .container,
+.carpics-section > .container,
+.map-section > .container {
+    background: #fff;
+    border: 1px solid #e3e7eb;
+    border-radius: 18px;
+    box-shadow: 0 10px 32px rgba(18, 32, 50, 0.07);
+    padding: clamp(32px, 4vw, 48px);
+}
+
+/* Give those framed sections breathing room */
+#work,
+.workflows,
+.data-section,
+.carpics-section,
+.map-section {
+    padding-inline: 20px;
+}
+
+/* Keep dark sections full-width and unboxed */
+.dark-section > .container {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Keep overview, impact, and tools editorial/open */
+.overview > .container,
+.impact-section > .container,
+.tools-section > .container {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Cleaner right-aligned navigation */
+.brand {
+    display: none;
+}
+
+.header-inner {
+    justify-content: flex-start;
+}
+
+.header-inner nav {
+    margin-left: auto;
+}
+
+/* Do NOT globally enlarge every paragraph.
+   Only slightly enlarge major narrative copy. */
+.dashboard-intro p,
+.architecture-copy p,
+.workflow-intro p,
+.workflow-integration-copy p,
+.auction-intro p,
+.data-intro p,
+.carpics-story article > p:last-child {
+    font-size: 1.05rem;
+    line-height: 1.58;
+}
+
+/* Responsive card treatment */
+@media (max-width: 900px) {
+    #work,
+    .workflows,
+    .data-section,
+    .carpics-section,
+    .map-section {
+        padding-inline: 16px;
+    }
+
+    #work > .container,
+    .workflows > .container,
+    .data-section > .container,
+    .carpics-section > .container,
+    .map-section > .container {
+        padding: 32px;
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 620px) {
+    #work,
+    .workflows,
+    .data-section,
+    .carpics-section,
+    .map-section {
+        padding-inline: 8px;
+    }
+
+    #work > .container,
+    .workflows > .container,
+    .data-section > .container,
+    .carpics-section > .container,
+    .map-section > .container {
+        padding: 24px 20px;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(18, 32, 50, 0.06);
+    }
 }

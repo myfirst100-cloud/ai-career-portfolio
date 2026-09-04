@@ -8,7 +8,7 @@
 
 **Platform:** `VS Code`
 
-**README Last Updated:** 2026-09-03 19:02
+**README Last Updated:** 2026-09-03 20:45
 
 ## Purpose
 
@@ -120,7 +120,6 @@ These are subjects of the portfolio content and supporting evidence. They are no
 
 ## Known limitations and unfinished areas
 
-- The Professional Approach section still contains explicitly labeled placeholder copy.
 - The site has no contact form, downloadable resume, or dynamic content source. The CarPics section links to the live application and its product story.
 - Twelve local image files are retained but are not referenced by the current HTML.
 - The portfolio does not execute or monitor any of the external systems it describes.
