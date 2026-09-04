@@ -51,7 +51,7 @@ h3 { margin-bottom: 8px; font-size: 1.1rem; line-height: 1.3; }
 
 .section { padding-block: clamp(80px, 10vw, 140px); }
 .overview { background: var(--soft); }
-.split-copy { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 0; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 16px 45px rgba(18,32,50,.07); }
+.split-copy { position: relative; display: grid;  grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; margin: 0; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 16px 45px rgba(18,32,50,.07); }
 .split-copy article { padding: clamp(38px, 5vw, 64px); }
 .split-copy h2 { margin-bottom: 28px; font-size: clamp(2rem, 3.3vw, 3rem); }
 .split-copy article > p:not(.eyebrow) { color: var(--muted); }
