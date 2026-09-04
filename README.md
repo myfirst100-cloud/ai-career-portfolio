@@ -8,7 +8,7 @@
 
 **Platform:** `VS Code`
 
-**README Last Updated:** 2026-08-14 18:13
+**README Last Updated:** 2026-09-03 19:02
 
 ## Purpose
 
@@ -38,7 +38,7 @@ There is no package manager configuration, framework, build system, backend, dat
 - `index.html` — complete portfolio page structure and written case-study content.
 - `styles.css` — responsive layout, typography, colors, cards, diagrams, tooltips, lightbox presentation, and reduced-motion behavior.
 - `lightbox.js` — opens and closes the enlarged Add Event image dialog and restores focus to its trigger.
-- `images/` — local screenshots, workflow diagrams, system diagrams, and business-impact graphics. Fourteen current files are referenced by the page; additional retained images are presently unused.
+- `images/` — local screenshots, workflow diagrams, system diagrams, and business-impact graphics. Eleven current files are referenced by the page; additional retained images are presently unused.
 - `TEMP/starting promtp-01.md` — original project brief and image notes retained as working reference material.
 - `AGENTS.md` — standing project instructions, including README review and timestamp requirements.
 
@@ -50,11 +50,12 @@ The single-page portfolio currently includes:
 - CCC Publisher Dashboard case study
 - Dashboard workflow controls, event creation, and status statistics
 - Car show content-update architecture
-- n8n workflow overview and selected workflow examples
+- n8n workflow overview and an embedded demonstration of the dashboard/workflow integration
 - Automated collector-car auction discovery and scraper architecture
 - Google Sheets-centered data and synchronization discussion
 - Business-impact summary
-- CarPics AI placeholder section
+- Concise CarPics AI business case with product imagery, technology proof, and links to the deployed application and product story
+- Concise interactive automotive-map business case with dataset summary, technology proof, and a live prototype link
 - Professional approach section
 - Technologies and platforms used across the presented projects
 
@@ -68,7 +69,7 @@ Technology items are buttons associated with `role="tooltip"` descriptions throu
 
 Implemented accessibility-related behavior includes a skip link, semantic landmarks, descriptive image alternative text, labeled navigation, focus-visible styles, dialog labeling/focus restoration, tooltip relationships, and reduced-motion handling that disables smooth scrolling. These features have not been verified by an automated accessibility suite.
 
-No portfolio content is loaded from an API or external data source.
+No portfolio content is loaded from an API or external data source. The CarPics and interactive-map product images and embedded YouTube demonstration are loaded from remote services.
 
 ## Setup and preview
 
@@ -97,7 +98,7 @@ Changes should be verified by opening the page in a modern browser and reviewing
 
 ## Dependencies
 
-The portfolio has no `package.json`, lock file, installed runtime dependencies, or development dependencies. It relies only on browser-supported HTML, CSS, and JavaScript features. All referenced site assets are stored locally in this repository.
+The portfolio has no `package.json`, lock file, installed runtime dependencies, or development dependencies. It relies only on browser-supported HTML, CSS, and JavaScript features. Referenced site assets are stored locally except for the CarPics and interactive-map product images, which use remote CarCollectorsClub.com URLs.
 
 ## Presented integrations
 
@@ -119,10 +120,9 @@ These are subjects of the portfolio content and supporting evidence. They are no
 
 ## Known limitations and unfinished areas
 
-- The CarPics AI case study is explicitly marked as in development.
 - The Professional Approach section still contains explicitly labeled placeholder copy.
-- The site has no contact form, downloadable resume, external project links, or dynamic content source.
-- Nine local image files are retained but are not referenced by the current HTML.
+- The site has no contact form, downloadable resume, or dynamic content source. The CarPics section links to the live application and its product story.
+- Twelve local image files are retained but are not referenced by the current HTML.
 - The portfolio does not execute or monitor any of the external systems it describes.
 - There are no automated accessibility, browser, visual-regression, lint, or content tests.
 - There is no documented hosting or deployment workflow.
